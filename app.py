@@ -34,9 +34,8 @@ sys.path.insert(0, 'insightface/detection/scrfd')
 
 from mmdet.apis import inference_detector, init_detector, show_result_pyplot
 
-REPO_URL = 'https://github.com/deepinsight/insightface/tree/master/detection/scrfd'
 TITLE = 'insightface Face Detection (SCRFD)'
-DESCRIPTION = f'This is a demo for {REPO_URL}.'
+DESCRIPTION = 'This is a demo for https://github.com/deepinsight/insightface/tree/master/detection/scrfd.'
 ARTICLE = None
 
 TOKEN = os.environ['TOKEN']
