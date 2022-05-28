@@ -124,8 +124,6 @@ def detect(image: np.ndarray, model_size: str, mode: int,
 
 
 def main():
-    gr.close_all()
-
     args = parse_args()
     device = torch.device(args.device)
 
