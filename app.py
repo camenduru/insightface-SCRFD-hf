@@ -151,4 +151,4 @@ gr.Interface(
     examples=examples,
     title=TITLE,
     description=DESCRIPTION,
-).queue().launch(show_api=False)
+).queue().launch(show_api=False, share=True)
