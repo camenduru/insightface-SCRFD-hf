@@ -10,20 +10,19 @@ import subprocess
 import sys
 import urllib.request
 
-if os.environ.get('SYSTEM') == 'spaces':
-    import mim
-    mim.install('mmcv-full==1.4', is_yes=True)
+# if os.environ.get('SYSTEM') == 'spaces':
+#     import mim
+#     mim.install('mmcv-full==1.4', is_yes=True)
 
-    subprocess.call(shlex.split('pip uninstall -y opencv-python'))
-    subprocess.call(shlex.split('pip uninstall -y opencv-python-headless'))
-    subprocess.call(
-        shlex.split('pip install opencv-python-headless==4.5.5.64'))
-    subprocess.call(shlex.split('pip install terminaltables==3.1.0'))
-    subprocess.call(shlex.split('pip install mmpycocotools==12.0.3'))
+#     subprocess.call(shlex.split('pip uninstall -y opencv-python'))
+#     subprocess.call(shlex.split('pip uninstall -y opencv-python-headless'))
+#     subprocess.call(
+#         shlex.split('pip install opencv-python-headless==4.5.5.64'))
+#     subprocess.call(shlex.split('pip install terminaltables==3.1.0'))
+#     subprocess.call(shlex.split('pip install mmpycocotools==12.0.3'))
 
-    subprocess.call(shlex.split('pip install insightface==0.6.2'))
-    subprocess.call(shlex.split('sed -i 23,26d __init__.py'),
-                    cwd='insightface/detection/scrfd/mmdet')
+#     subprocess.call(shlex.split('pip install insightface==0.6.2'))
+#     subprocess.call(shlex.split('sed -i 23,26d __init__.py'), cwd='insightface/detection/scrfd/mmdet')
 
 import cv2
 import gradio as gr
